@@ -1,0 +1,17 @@
+.intro {
+  min-height: 25em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  &:not(:last-child) {
+    margin-bottom: 2em;
+  }
+}
+
+.intro__quote-wrapper {
+  margin: 3em 0;
+  display: flex;
+  flex-wrap: wrap;
+}

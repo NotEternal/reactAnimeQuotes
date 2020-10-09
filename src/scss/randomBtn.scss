@@ -1,0 +1,52 @@
+.btn-random {
+  padding: 1em;
+  border: none;
+  border-radius: .3em;
+  border: .1em solid var(--color-key);
+  background-color: transparent;
+  color: var(--color-key);
+  transition: .2s;
+
+  &:hover {
+    background-color: var(--color-key);
+    color: var(--background-color);
+  }
+
+  &.loading {
+    position: relative;
+    background-color: var(--color-key);
+    pointer-events: none;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: inherit;
+      background-color: var(--color-key);
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: 1.6em;
+      height: 1.6em;
+      border-radius: 50%;
+      border-top: .2em solid var(--background-color);
+      animation: rotate .5s linear infinite both;
+    }
+
+    @keyframes rotate {
+      0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+      }
+      100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+      }
+    }
+  }
+}

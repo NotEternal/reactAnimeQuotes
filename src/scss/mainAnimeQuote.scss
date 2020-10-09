@@ -1,0 +1,36 @@
+.anime-quote {
+  max-width: 30em;
+  border-radius: .4em;
+  border: .1rem solid var(--dark);
+  font-size: 1.2em;
+  box-shadow: 0 0 1em #000;
+
+  &.loading {
+    .anime-quote__title,
+    .anime-quote__character,
+    .anime-quote__description {
+      opacity: .4;
+    }
+  }
+}
+
+.anime-quote__title {
+  margin: 0;
+  padding: 1.4rem;
+  border-radius: .4em .4em 0 0;
+  border-bottom: .1rem solid var(--dark);
+  background-color: var(--light-black);
+  color: var(--color-key);
+}
+
+.anime-quote__character {
+  margin: 0;
+  padding: .8rem 1.4rem;
+  font-size: .9em;
+  border-bottom: .1rem solid var(--dark);
+  background-color: var(--dark);
+}
+
+.anime-quote__description {
+  padding: 1.4rem;
+}
