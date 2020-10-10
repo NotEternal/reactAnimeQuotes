@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/reactAnimeQuotes/static/css/main.c4dd43f9.chunk.css",
+    "main.js": "/reactAnimeQuotes/static/js/main.a5d81aea.chunk.js",
+    "main.js.map": "/reactAnimeQuotes/static/js/main.a5d81aea.chunk.js.map",
+    "runtime-main.js": "/reactAnimeQuotes/static/js/runtime-main.bd3cff97.js",
+    "runtime-main.js.map": "/reactAnimeQuotes/static/js/runtime-main.bd3cff97.js.map",
+    "static/css/2.764ccc25.chunk.css": "/reactAnimeQuotes/static/css/2.764ccc25.chunk.css",
+    "static/js/2.25d89c03.chunk.js": "/reactAnimeQuotes/static/js/2.25d89c03.chunk.js",
+    "static/js/2.25d89c03.chunk.js.map": "/reactAnimeQuotes/static/js/2.25d89c03.chunk.js.map",
+    "index.html": "/reactAnimeQuotes/index.html",
+    "precache-manifest.4dc23388e9af56e4e3c920e7f63af47b.js": "/reactAnimeQuotes/precache-manifest.4dc23388e9af56e4e3c920e7f63af47b.js",
+    "service-worker.js": "/reactAnimeQuotes/service-worker.js",
+    "static/css/2.764ccc25.chunk.css.map": "/reactAnimeQuotes/static/css/2.764ccc25.chunk.css.map",
+    "static/css/main.c4dd43f9.chunk.css.map": "/reactAnimeQuotes/static/css/main.c4dd43f9.chunk.css.map",
+    "static/js/2.25d89c03.chunk.js.LICENSE.txt": "/reactAnimeQuotes/static/js/2.25d89c03.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.bd3cff97.js",
+    "static/css/2.764ccc25.chunk.css",
+    "static/js/2.25d89c03.chunk.js",
+    "static/css/main.c4dd43f9.chunk.css",
+    "static/js/main.a5d81aea.chunk.js"
+  ]
+}
