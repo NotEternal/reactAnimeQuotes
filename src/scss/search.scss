@@ -1,0 +1,25 @@
+.search {
+  display: flex;
+  align-items: center;
+}
+
+.search__input {
+  margin-right: 1em;
+  padding: .84rem;
+  border-radius: .3em;
+  border: .1rem solid var(--color-key);
+  box-shadow: 0 0 1em #000;
+  background-color: transparent;
+  color: inherit;
+  transition: .2s;
+
+  &::selection {
+    color: var(--color);
+  }
+
+  &:hover,
+  &:focus {
+    color: var(--black);
+    background-color: var(--color-key);
+  }
+}

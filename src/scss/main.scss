@@ -1,17 +1,19 @@
 .intro {
   min-height: 25em;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   justify-content: space-between;
-  align-items: flex-start;
 
   &:not(:last-child) {
     margin-bottom: 2em;
   }
 }
 
-.intro__quote-wrapper {
-  margin: 3em 0;
-  display: flex;
-  flex-wrap: wrap;
+.intro__container {
+  min-width: 30em;
+  margin: 1em 0;
+  width: 45%;
+  padding: 2%;
+  border: .1em solid var(--dark);
+  border-radius: .4em;
 }

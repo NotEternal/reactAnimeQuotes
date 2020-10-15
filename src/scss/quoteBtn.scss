@@ -1,13 +1,13 @@
-.btn-random {
-  padding: 1em;
-  border: none;
+.quote-btn {
+  padding: 1rem;
   border-radius: .3em;
-  border: .1em solid var(--color-key);
+  border: .1rem solid var(--color-key);
   background-color: transparent;
   color: var(--color-key);
   transition: .2s;
 
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: var(--color-key);
     color: var(--background-color);
   }
