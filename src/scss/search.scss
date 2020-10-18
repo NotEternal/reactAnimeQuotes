@@ -1,11 +1,12 @@
 .search {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
 }
 
 .search__input {
   margin-right: 1em;
-  padding: .84rem;
+  padding: 1rem;
   border-radius: .3em;
   border: .1rem solid var(--color-key);
   box-shadow: 0 0 1em #000;
@@ -21,5 +22,11 @@
   &:focus {
     color: var(--black);
     background-color: var(--color-key);
+  }
+}
+
+@media screen and (max-width: 430px ) {
+  .search__input {
+    margin-bottom: 1em;
   }
 }

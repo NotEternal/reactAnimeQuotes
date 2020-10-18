@@ -2,6 +2,7 @@
   min-height: 25em;
   display: flex;
   flex-wrap: wrap;
+  align-items: flex-start;
   justify-content: space-between;
 
   &:not(:last-child) {
@@ -16,4 +17,17 @@
   padding: 2%;
   border: .1em solid var(--dark);
   border-radius: .4em;
+}
+
+@media screen and (max-width: 600px) {
+  .intro__container {
+    width: 100%;
+    min-width: auto;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .intro__container {
+    min-width: 20em;
+  }
 }

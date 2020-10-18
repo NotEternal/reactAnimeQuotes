@@ -28,6 +28,10 @@ class Main extends React.Component {
     this.URL_ANIME_QUOTE_BY_NAME = 'https://animechanapi.xyz/api/quotes?anime=';
   }
 
+  componentDidMount() {
+    this.setRandomAnimeQuote();
+  }
+
   render() {
     return (
       <main className="main">
