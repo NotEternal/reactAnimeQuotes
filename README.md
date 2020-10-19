@@ -1,1 +1,2 @@
-Test project for practice work with outside API and React. You can see result on github pages
+Test project for practice work with outside API and React.
+👉[Result](https://noteternal.github.io/reactAnimeQuotes)
