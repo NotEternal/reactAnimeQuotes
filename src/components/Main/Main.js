@@ -21,9 +21,6 @@ class Main extends React.Component {
         quote: 'Quote',
       },
     };
-    this.setRandomAnimeQuote = this.setRandomAnimeQuote.bind(this);
-    this.setUserAnimeQuote = this.setUserAnimeQuote.bind(this);
-    this.setAnimeName = this.setAnimeName.bind(this);
     this.URL_RANDOM_ANIME_QUOTE = 'https://animechanapi.xyz/api/quotes/random';
     this.URL_ANIME_QUOTE_BY_NAME = 'https://animechanapi.xyz/api/quotes?anime=';
   }
@@ -34,11 +31,11 @@ class Main extends React.Component {
 
   render() {
     return (
-      <main className="main">
-        <section className="intro">
-          <div className="intro__container">
-            <h2 className="intro__title">Сlick to generate random quote</h2>
-            <div className="intro__quote-wrapper">
+      <main className='main'>
+        <section className='intro'>
+          <div className='intro__container'>
+            <h2 className='intro__title'>Сlick to generate random quote</h2>
+            <div className='intro__quote-wrapper'>
               <AnimeQuote
                 randomQuote={this.state.randomQuote}
                 quoteLoading={this.state.loading}
@@ -46,13 +43,12 @@ class Main extends React.Component {
             </div>
             <QuoteBtn
               reqFunction={this.setRandomAnimeQuote}
-              quoteLoading={this.state.loading}
-            >
+              quoteLoading={this.state.loading}>
               Random
             </QuoteBtn>
           </div>
-          <div className="intro__container">
-            <h2 className="intro__title">
+          <div className='intro__container'>
+            <h2 className='intro__title'>
               Try to search quotes from your anime
             </h2>
             <AnimeQuote
@@ -61,13 +57,11 @@ class Main extends React.Component {
             />
             <Search
               setAnimeName={this.setAnimeName}
-              quoteLoading={this.state.loading}
-            >
+              quoteLoading={this.state.loading}>
               <QuoteBtn
                 animeName={this.state.animeName}
                 reqFunction={this.setUserAnimeQuote}
-                quoteLoading={this.state.loading}
-              >
+                quoteLoading={this.state.loading}>
                 Search
               </QuoteBtn>
             </Search>
@@ -77,7 +71,7 @@ class Main extends React.Component {
     );
   }
 
-  setRandomAnimeQuote() {
+  setRandomAnimeQuote = () => {
     this.setState({
       loading: false,
     });
@@ -92,9 +86,9 @@ class Main extends React.Component {
         loading: true,
       });
     })();
-  }
+  };
 
-  setUserAnimeQuote(nameAnime) {
+  setUserAnimeQuote = (nameAnime) => {
     this.setState({
       loading: false,
     });
@@ -122,13 +116,13 @@ class Main extends React.Component {
         animeName: '',
       });
     })();
-  }
+  };
 
-  setAnimeName(name) {
+  setAnimeName = (name) => {
     this.setState({
       animeName: name,
     });
-  }
+  };
 }
 
 export default Main;

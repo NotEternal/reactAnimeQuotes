@@ -20,8 +20,8 @@ html {
 
 body {
   font-family: 'Oswald', sans-serif;
-  letter-spacing: .1em;
-  background-color: var(--background-color);
+  letter-spacing: 0.1em;
+  background: var(--background-color);
   color: var(--color);
 }
 
@@ -36,16 +36,16 @@ input {
 a {
   text-decoration: none;
   color: inherit;
-  transition: .22s;
+  transition: 0.22s;
 
-    &:hover {
-      color: var(--color-key);
-    }
+  &:hover {
+    color: var(--color-key);
+  }
 
-    &:active {
-      opacity: .5;
-      transition: .02s;
-    }
+  &:active {
+    opacity: 0.5;
+    transition: 0.02s;
+  }
 }
 
 ::selection {
